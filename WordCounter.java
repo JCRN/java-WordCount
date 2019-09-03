@@ -10,5 +10,6 @@ public class WordCounter
         String modUnText = unText.replaceAll("[[\\.\\?\\!\\,\\;\\:\\{\\}\\(\\)\\']]", "");
 
         String[] words = modUnText.split(" +");
+        
     }
 }
