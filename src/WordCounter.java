@@ -14,10 +14,12 @@ public class WordCounter
 
         // Split text into individual words in an array
         String[] words = modUnText.split(" +");
+
+        System.out.println(Arrays.toString(words));
         
         // Create arraylists to hold words and count
-        ArrayList<String> words = new ArrayList<String>();
-        ArrayList<Integer> count = new ArrayList<Integer>();
+        // ArrayList<String> words = new ArrayList<String>();
+        // ArrayList<Integer> count = new ArrayList<Integer>();
 
 
 
