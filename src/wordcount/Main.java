@@ -31,5 +31,7 @@ public class WordCounter
                 map.put(aWord, map.get(aWord) + 1);
             }
         }
+
+        System.out.println(map.size());       
     }
 }
