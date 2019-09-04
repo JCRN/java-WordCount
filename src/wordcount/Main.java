@@ -2,7 +2,7 @@ package wordcount;
 
 import java.util.*;
 
-public class WordCounter 
+public class Main 
 {
     public static void main(String[] args) 
     {
@@ -32,6 +32,16 @@ public class WordCounter
             }
         }
 
-        System.out.println(map.size());       
+        System.out.println(map.size());
+        
+        ArrayList<HashMap.Entry<String, Integer>> sortedMap = new ArrayList<HashMap.Entry<String, Integer>>();
+
+        sortedMap.addAll(map.entrySet());
+
+        Collections.sort(sortedMap, (w1, w2) -> w2.getValue() - w1.getValue());
+        for (int i=0; i < 50; i++)
+        {
+            System.out.println(sortedMap.get(i).getKey() + sortedMap.get(i).getValue());
+        }
     }
 }
